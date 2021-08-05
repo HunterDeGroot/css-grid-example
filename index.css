@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    display:inline-block;
+    height: calc(100vh - 4px);
+}
+
+#grid{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#form {
+    width: 20%;
+    float: right;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.col {
+    flex-grow: 1;
+    background-color: aqua;
+    padding: 4px;
+    border: black 2x;
+}
+
+.box {
+    height: 100%;
+    position: relative;
+}
+
+.box-main {
+    background-color: gray;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.box-button{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}

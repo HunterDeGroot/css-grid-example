@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="index.css" rel="stylesheet" />
+    <title>HTML Grid Boxes</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="grid">
+        </div>
+    </div>
+    <div id="form">
+        <label for="colnum">cols:</label>
+        <select name="colnum" id="colnum" onchange={render()}>
+        </select>
+        <br><br>
+        <button onClick={addBox()}>Add box</button>
+        <br><br>
+        <button onClick={reset()}>Reset</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
